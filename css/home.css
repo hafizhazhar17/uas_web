@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= NAVBAR ================= */
+.custom-navbar {
+    background: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.4));
+    padding: 18px 0;
+}
+
+.navbar {
+    background-color: #000000 !important;
+}
+
+.logo,
+.nav-link,
+.logout {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    color: #fff !important;
+}
+
+.logo span {
+    color: red;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: url('../images/bg-home.jpg') center / cover no-repeat;
+    position: relative;
+    filter: brightness(1.15) saturate(1.25);
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,.65), rgba(0,0,0,.15));
+}
+
+/* ================= LEFT TEXT ================= */
+.text-area {
+    position: relative;
+    z-index: 2;
+    padding-left: 80px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* TANAH SURGA (WATER BRUSH) */
+.script {
+    font-family: 'Water Brush', cursive;
+    font-size: 85px;
+
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -10px;
+}
+
+/* INDONESIA */
+.title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 105px;
+    letter-spacing: 6px;
+    line-height: 1;
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+
+/* ================= OVAL KEINDAHAN ALAM ================= */
+.search {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 24px;
+    height: 42px;
+    width: 360px;
+
+    background: rgba(98, 81, 81, 0.938);
+    border-radius: 999px;
+
+    margin: 0 auto;     /* CENTER */
+    margin-top: 6px;
+
+    box-shadow:
+        inset 0 2px 4px rgba(90, 84, 84, 0.4),
+        0 4px 12px rgba(55, 51, 51, 0.638);
+}
+.search span,
+.search p {
+    font-family: 'Pattaya', sans-serif;
+}
+
+
+.search-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+
+/* ================= GALLERY ================= */
+.gallery {
+    position: relative;
+    z-index: 2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-left: 103px;
+}
+
+/* GAMBAR */
+.grid img {
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* ================= CLOUD ================= */
+.cloud {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 70%;
+    opacity: 0.95;
+    z-index: 2;
+    pointer-events: none;
+}
+/* ================= ABOUT PAGE ================= */
+
+.about-box {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 60px 70px;
+    max-width: 900px;
+    backdrop-filter: blur(2px);
+}
+
+.about-text {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+/* WELCOME TO WONDERFUL */
+.welcome-text {
+    font-family: 'Instrument Serif', serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.indo {
+    font-family: 'Instrument Serif', serif;
+    font-size: 150px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+.indonesia-desc {
+    font-family: 'Instrument Serif', cursive;
+    font-size: 24px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+.logout {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.logout:hover {
+    opacity: 0.7;
+}
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ⬅️ KUNCI */
+    gap: 18px;
+}
+
+
+/* WRAP IMAGE (ANTI MELUAP) */
+.gallery .grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* HOVER ZOOM EFFECT */
+.gallery .grid img:hover {
+    transform: scale(1.12);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    z-index: 5;
+}

@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #020633;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    height: 70px;
+    background: linear-gradient(to bottom, #000000, #1a0000);
+}
+
+/* BRAND TETAP */
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* MENU NAV (ADAMINA) */
+.navbar-nav .nav-link,
+.navbar .nav-link.text-white {
+    font-family: 'Adamina', serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* WARNA PUTIH NAVBAR */
+.navbar-nav .nav-link,
+.navbar .nav-link.text-white,
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+
+
+
+/* MAIN */
+.main-section {
+    height: calc(100vh - 70px);
+}
+
+/* GAMBAR KIRI */
+.image-section {
+    height: calc(100vh - 70px);
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* KONTEN KANAN */
+.content-section {
+    height: calc(100vh - 70px);
+    background-color: #0c1469;
+    padding: 90px 80px;
+    color: white;
+    position: relative; /* ACUAN */
+}
+
+/* TEKS */
+.title {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-family: 'Trade Winds', cursive;
+    font-size: 18px;
+    line-height: 2;
+    max-width: 550px;
+}
+
+
+/* THUMBNAIL */
+.thumbnail-wrapper {
+    margin-top: 60px;
+    .thumbnail-wrapper {
+    padding: 20px 30px;  /* atas-bawah | kiri-kanan */
+}
+
+    background: rgba(124, 90, 175, 0.786);
+    border-radius: 30px;
+
+    display: flex;
+    gap: 20px;
+
+    width: 690px;   /* ⬅️ PANJANG KE KANAN */
+}
+
+
+.thumbnail-wrapper img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid white;
+}
+.thumbnail-wrapper img {
+    position: relative;
+    top: -20px;   /* ⬅️ NAIKKAN */
+}
+.thumbnail-wrapper {
+    padding-left: 60px;   /* ⬅️ dorong isi ke kanan */
+}
+
+
+
+/* KEMBALI — KANAN BAWAH */
+.back-link {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+/* WARNA BG PER HALAMAN */
+.bg-top1 .content-section {
+    background-color: #020633;   /* biru laut */
+}
+
+.bg-top2 .content-section {
+    background-color: #728675;   /* biru kehijauan */
+}
+
+.bg-top3 .content-section {
+    background-color: #293A2B;   /* gelap elegan */
+}
+
+.bg-top4 .content-section {
+    background-color: #771F97;   /* merah gelap */
+}
+.bg-top5 .content-section {
+    background-color: #4B4A3F;   /* merah gelap */
+}
+/* RECTANGLE PER HALAMAN */
+.bg-top1 .thumbnail-wrapper {
+    background: rgba(255,255,255,0.12);
+}
+
+.bg-top2 .thumbnail-wrapper {
+    background: #412c0c8d;
+}
+
+.bg-top3 .thumbnail-wrapper {
+    background: rgba(47, 42, 22, 0.76);
+}
+
+.bg-top4 .thumbnail-wrapper {
+    background: #302572e5;
+}
+.bg-top5 .thumbnail-wrapper {
+    background: #243412e5;
+}
+/* THUMBNAIL WRAPPER */
+.thumbnail-wrapper {
+    margin-top: 10px;
+    padding: 30px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+/* GAMBAR */
+.thumbnail-wrapper img {
+    width: 170px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid white;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* ANIMASI */
+}
+
+/* HOVER ZOOM */
+.thumbnail-wrapper img:hover {
+    transform: scale(1.12);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    z-index: 2;
+}

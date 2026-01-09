@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: #000 !important;
+    padding: 18px 0;
+}
+
+.logo,
+.nav-link,
+.logout {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    color: #fff !important;
+}
+
+.logo span {
+    color: red;
+}
+
+.nav-link.active {
+    opacity: 1;
+}
+
+.nav-link {
+    opacity: 0.8;
+}
+
+/* ================= SECTION TOP 5 ================= */
+.top5-section {
+    min-height: 100vh;
+    padding-top: 140px;
+    background:
+        linear-gradient(
+            rgba(45, 15, 60, 0.85),
+            rgba(25, 5, 40, 0.9)
+        ),
+        url('../images/bg-top5.jpg') center/cover no-repeat;
+}
+
+/* ================= TITLE ================= */
+.top5-title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 72px;
+    letter-spacing: 6px;
+    color: #f5caca;
+}
+
+.top5-title .top-red {
+    color: #ff2b2b;
+}
+
+/* ================= IMAGE CARD ================= */
+.destination-card {
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+    transition: transform 0.4s ease;
+}
+
+.destination-card img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= GO TO GALERY ================= */
+.go-gallery {
+    margin-top: 40px;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.go-gallery .line {
+    display: block;
+    width: 1px;
+    height: 40px;
+    margin: 12px auto 0;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .top5-title {
+        font-size: 48px;
+    }
+
+    .destination-card img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top5-title {
+        font-size: 36px;
+        letter-spacing: 3px;
+    }
+}

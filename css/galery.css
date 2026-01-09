@@ -1,0 +1,146 @@
+*
+/* ===== NAVBAR ===== */
+.custom-navbar {
+    background: linear-gradient(to bottom, #000000, #1a0000);
+    height: 70px;
+}
+
+.navbar-brand {
+    font-family: 'Adamina', serif;
+    letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff3c3c;
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: 'Adamina', serif;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    background: linear-gradient(to bottom, #000, #1a0000);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    color: white;
+}
+
+.logo {
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: red;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+}
+
+.menu li.active {
+    border-bottom: 1px solid white;
+}
+
+.logout {
+    font-size: 14px;
+}
+
+/* GALERY SECTION */
+.galery-section {
+    min-height: calc(100vh - 70px);
+    background: url("../images/bg-galery.jpg") center/cover no-repeat;
+    padding: 50px 0 40px;
+}
+
+.galery-title {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive; /* ⬅️ INI KUNCINYA */
+    font-size: 70px;
+    color: #7a1fa2;
+    margin-bottom: 30px;
+}
+
+/* GRID FINAL (STABIL & TIDAK ACAK) */
+.galery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* FOTO */
+.galery-grid img {
+    width: 200px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.next-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* TENGAH HORIZONTAL */
+    margin-top: 60px;
+}
+
+.next-btn {
+    display: inline-block;
+    padding: 12px 40px;
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Adamina', serif;
+    letter-spacing: 3px;
+
+    border: 2px solid white;
+    border-radius: 30px;
+    background: transparent;
+    text-align: center;
+
+    width: fit-content;        /* KUNCI */
+}
+
+
+/* WRAPPER */
+.img-box {
+    overflow: hidden;              /* KUNCI: zoom tidak keluar */
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* GAMBAR */
+.img-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.5s ease;   /* animasi halus */
+}
+
+/* HOVER ZOOM */
+.img-box:hover img {
+    transform: scale(1.15);
+}
